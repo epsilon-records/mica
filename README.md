@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Mica](screenshot.png)
 
-Mica is an equalizer with up to 24 bands. Version 2.0 adds dynamic EQ, spectral dynamics, natural phase, character modes, EQ Sketch, EQ Match and Spectrum Grab. It was written from scratch; no third-party code, presets or artwork are included.
+Mica is an equalizer with up to 24 bands. Version 2.0 adds dynamic EQ, spectral dynamics, natural phase, character modes, EQ Sketch, EQ Match and Spectrum Grab. It was written from scratch: the DSP, interface and presets are original work, and third-party components (such as the DPF framework) are listed under [License](#license).
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
