@@ -6,7 +6,7 @@ Part of **[Epsilon Audio](https://github.com/natehouk/epsilon-plugins)**, a fami
 
 ![Mica](screenshot.png)
 
-Mica is a clean-room design with the feature set of FabFilter Pro-Q 4 (December 2024). Mica 1.x matched the original Pro-Q (2009); version 2.0 adds dynamic EQ, spectral dynamics, natural phase, character modes, EQ Sketch, EQ Match and Spectrum Grab. It was written from scratch, working only from FabFilter's public product pages and press releases. No FabFilter code, binaries, presets, artwork or trademarks were used.
+Mica is an equalizer with up to 24 bands. Version 2.0 adds dynamic EQ, spectral dynamics, natural phase, character modes, EQ Sketch, EQ Match and Spectrum Grab. It was written from scratch; no third-party code, presets or artwork are included.
 
 It is part of a family of plugins:
 - [Monolith](https://github.com/natehouk/monolith) (synth)
@@ -103,34 +103,7 @@ xattr -dr com.apple.quarantine ~/Library/Audio/Plug-Ins/*/Mica*
 - **Hover tips** on every control, shape, dot and peak, plus a **HELP window**.
 - **[Full manual](docs/MANUAL.md)**, also in every release zip as `Mica-Manual.html`.
 
-### Compared with FabFilter Pro-Q 4 (2024)
-
-| Pro-Q 4 | Mica |
-|---|---|
-| Up to 24 bands; bell, notch, shelves, cuts, band pass, tilt shelf, flat tilt, all pass | ✓ all ten shapes |
-| Continuous slopes up to 96 dB/oct; brickwall cuts | Slopes from 6 to 96 dB/oct in steps of 6; brickwall cuts |
-| Zero latency, natural phase, linear phase (adjustable) | ✓ (three linear-phase qualities) |
-| Gentle and Warm character modes | ✓ |
-| Dynamic EQ: attack, release, sidechain filter, external trigger | ✓ on bells, shelves and tilts |
-| Spectral dynamics | ✓ (STFT, about 21 ms latency while in use) |
-| EQ Sketch | ✓ |
-| EQ Match against an external signal | ✓ (sidechain input) |
-| EQ Match against another instance | Not supported (needs instances to talk to each other) |
-| Spectrum Grab | ✓ |
-| Analyser: pre, post, external; range, speed, resolution, tilt, freeze; collision detection | ✓ |
-| Display ranges 3, 6, 12, 30 dB | ✓ |
-| Piano roll display | ✓ (note names, snapping) |
-| Auto gain, gain scale, phase invert | ✓ |
-| Intelligent solo | ✓ |
-| Per-band mid/side or left/right | ✓ |
-| MIDI Learn, including the active band | ✓ |
-| Copy and paste bands between instances | ✓ |
-| Output meter with peak readout | ✓ |
-| Undo/redo, A/B, double-click entry, help hints | ✓ |
-| Resizable interface | ✓ (resizes freely) |
-| Instance List | Not supported (needs instances to talk to each other) |
-| Surround and Dolby Atmos up to 9.1.6 | Not supported (stereo only) |
-| AAX, AudioSuite, Pro Tools control surfaces | Not supported (needs Avid's SDK and signing) |
+Not supported: EQ Match against another instance; Instance List; Surround and Dolby Atmos up to 9.1.6; AAX, AudioSuite, Pro Tools control surfaces.
 
 ## Build from source
 
@@ -186,7 +159,7 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## Changelog
 
 - **2.1:** the preset browser searches names and categories as you type, and keeps Favourites.
-- **2.0:** Brings Mica up to Pro-Q 4. New in this version:
+- **2.0:** New in this version:
   - Notch, band pass, tilt shelf, flat tilt and all-pass shapes.
   - Slopes up to 96 dB/oct and brickwall cuts; shelves now have a slope too.
   - Dynamic EQ with a sidechain filter and an external sidechain input; spectral dynamics.
@@ -206,5 +179,3 @@ New parameters are only ever appended, so saved sessions and automation keep wor
 ## License
 
 [MIT](LICENSE). Built with [DPF](https://github.com/DISTRHO/DPF) and its bundled NanoVG, which are under the ISC license. `plugins/Mica/ResizeHandle.hpp` comes from DPF's examples and keeps its ISC notice.
-
-"FabFilter" and "FabFilter Pro-Q" are trademarks of FabFilter Software Instruments. Mica is not affiliated with or endorsed by FabFilter.
